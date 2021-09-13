@@ -21,3 +21,15 @@ body,html {
 .clear-button {
     background-color: #cc101f;
 }
+
+.container {
+    position: relative;
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+.space-filler {
+    text-align: center;
+    font-size: xx-large;
+    color: #a77c29;
+}
