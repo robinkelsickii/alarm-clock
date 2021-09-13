@@ -7,15 +7,14 @@
     <body>
 
         <h1 class="space-filler">Marine Corps Themed Alarm Clock</h1>
-        
+
         <p class="container">
         <div id="clock"></div>
         <div id="todaysDate"></div>
         <label class="set-alarm-time">Input time and date for the alarm.</label></div>
-        <p><input type="datetime-local" id="user-input"></p>
+        <p><input onchange = "setAlarmTime(this.value)" type="datetime-local" id="user-input"></p>
         <div id="buttons">
-        <button class="button set-alarm">Set Alarm</button>
-        <button class="button clear-button">Clear</button>
+        <button onclick="setAlarm()" class="button set-alarm">Set Alarm</button>
         </div>
         </p>
         <script src="main.js"></script>

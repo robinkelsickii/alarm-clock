@@ -1,4 +1,6 @@
 var displayTime = document.getElementById('clock');
+var alarmTime = null
+var alarmTimeOut = null
 
 
 function currentTime() {
@@ -16,6 +18,23 @@ function doubleDigits(time) {
         return '0' + time;
     }
     return time;
+}
+
+function setAlarmTime(value) {
+    alarmTime = value
+}
+
+function setAlarm() {
+    if (alarmTime) {
+        let current = new Date();
+        let timeTilAlarm = new Date(alarmTime);
+
+        if (timeTilAlarm > current) {
+            let timeout = timeTilAlarm.getTime() - current.getTime();
+            alarmTimeOut = setTimeout(()=> alert("Hey Devil, It's time to wake up. Hoorah!"), timeout);
+            alert("Alright, I'll wake you up.");
+        }
+    }
 }
 
 setInterval(currentTime, 1000);
