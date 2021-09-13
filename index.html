@@ -5,15 +5,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="display">
+        
+        <p class="container">
         <div id="clock"></div>
+        <div id="todaysDate"></div>
+        <label class="set-alarm-time">Input time and date for the alarm.</label></div>
+        <p><input type="datetime-local" id="user-input"></p>
         <div id="buttons">
-        <label class="set-alarm-time">Input time and date for the alarm.</label>
-        <input type="datetime-local" id="alarm-time">
         <button class="button set-alarm">Set Alarm</button>
         <button class="button clear-button">Clear</button>
         </div>
-        </div>
+        </p>
         <script src="main.js"></script>
     </body>
 </html>

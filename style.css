@@ -1,26 +1,17 @@
 body,html {
-    margin: 0px;
-    padding: 0px;
+    margin: 75px;
+    padding: 25px;
     background-color: #373d31;
 }
 
-#display {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-}
-
-#buttons {
-    display: inline-block;
+#clock {
+    font-size: 72px;
+    color: #ffd500;
 }
 
 .set-alarm-time {
-    color: #ffd500
+    font-size: 25px;
+    color: #a77c29;
 }
 
 .set-alarm {
@@ -28,5 +19,5 @@ body,html {
 }
 
 .clear-button {
-    background-color: #a77c29;
+    background-color: #cc101f;
 }
