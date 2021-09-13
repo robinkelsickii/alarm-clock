@@ -37,4 +37,5 @@ function setAlarm() {
     }
 }
 
+
 setInterval(currentTime, 1000);
